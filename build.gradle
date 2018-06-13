@@ -1,0 +1,14 @@
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'application'
+    apply plugin: 'idea'
+
+    repositories {
+        mavenCentral()
+    }
+
+    compileJava {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}

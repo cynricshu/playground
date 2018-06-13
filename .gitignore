@@ -1,0 +1,17 @@
+/.gradle
+/.idea
+out
+/output
+/projectFilesBackup
+build/
+log/
+*.iml
+*.ipr
+*.iws
+/classes
+nfs/
+velocity.log
+generated/
+*.bvar.data
+.gradletasknamecache
+.DS_Store
