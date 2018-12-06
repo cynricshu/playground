@@ -2,6 +2,8 @@
 
 import static org.joda.time.format.DateTimeFormat.forPattern;
 
+import java.time.Instant;
+
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.joda.time.Duration;
@@ -14,7 +16,7 @@ import org.joda.time.format.DateTimeFormatter;
  */
 public class Joda {
     public static void main(String[] args) {
-
+        System.out.println(Instant.now().toString());
         System.out.println(new Duration(new DateTime("2014-07-05T00:00:00"), DateTime.now()));
 
         DateTime now = new DateTime(1514736000000L);

@@ -3,6 +3,7 @@
 import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Stream;
 
 /**
  * Main
@@ -11,6 +12,7 @@ import java.util.Set;
  */
 public class Guava {
     public static void main(String[] args) {
+        Integer.parseInt("1");
 
         System.out.println(32 & 0);
 
@@ -19,7 +21,11 @@ public class Guava {
         receivers.add("jiangjunchao@baidu.com");
         String[] a = receivers.toArray(new String[]{});
 
+        Stream.of(1, 2, 3).forEach(it -> {
+            return;
+        });
 
+        System.out.println("hello");
 
         double years = 1.51;
         String yearStr = new DecimalFormat("#.#").format(years);
